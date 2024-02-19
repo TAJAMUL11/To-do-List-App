@@ -17,18 +17,18 @@ function addTask(){ /* this function is associated with add button*/
             li.appendChild(span); /* as li is parent to span, we append it to the li*/
         }
         inputBox.value = '';  /* once the user puts data into the input and clicks on button, empty the input*/
-        saveData();
+        saveData();/* This is used here as I am storing the data when certain actions on done with these elements*/
     }
 
 /*Once I will click on li, the toggle helps in activating of ".check" class and the latter image is invoked  */
     listContainer.addEventListener('click', function(e){ /* added an event listener to the list*/
         if(e.target.tagName === 'LI'){
             e.target.classList.toggle("checked");
-            saveData();
+            saveData();/* This is used here as I am storing the data when certain actions on done with these elements*/
         }
         else if(e.target.tagName === 'SPAN'){  
             e.target.parentElement.remove();/* if clicked on span element, remove parent(which is li) */
-            saveData();
+            saveData();/* This is used here as I am storing the data when certain actions on done with these elements*/
         }
 
     },false);
@@ -37,11 +37,15 @@ function addTask(){ /* this function is associated with add button*/
     /* for local storage*/
 
     function saveData(){
-        localStorage.setItem("data", listContainer.innerHTML);
+        localStorage.setItem("data", listContainer.innerHTML); /* Here I am creating a function and adding local storage*/
+
+        /* I am using method setItem and collecting the data of listContainer*/
 
     }
 
     function showTask(){
         listContainer.innerHTML = localStorage.getItem("data");
+
+        /* here I am fetching the data from localStorage using method getItem*/
     }
     showTask();
