@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .container{
@@ -16,7 +16,10 @@
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+    filter: contrast(110%);
 }
+
+
 
 
 
@@ -24,20 +27,21 @@
     background-color: #ffffff0b;
     border-radius: 7px;
     box-shadow: 0 0 .5rem #252424;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(5px);
     min-width: 590px;
     min-height: 95vh;
     padding: 2.3rem 2rem 3.1rem;
+    z-index: 100;
     
 }
 
 .todo-app h2{
-    font-weight: 500;
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.1rem;
-    font-size: 2.7rem;
+    font-size: 2.95rem;
     color: #fff;
     
 }
@@ -61,7 +65,7 @@
     outline: none;
     border: none;
     background-color: transparent; 
-    padding: .7rem;   
+    padding: .8rem;   
     font-weight: 400;
     flex: 1;
    
@@ -69,9 +73,9 @@
 
 #btn{
     outline: none;
-    border-radius: 1.4rem;
+    border-radius: 2.1rem;
     border: none;
-    padding: 1rem 2.8rem;
+    padding: 1.1rem 2.75rem;
     font-size: 1rem;
     font-weight: 600;
     background-color: #ff5945;
@@ -85,7 +89,7 @@
 
 ul li{
     list-style: none;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     padding: .7rem .5rem .7rem 2.8rem;
     user-select: none;
     cursor: pointer;
@@ -109,8 +113,8 @@ ul li::before{
 }
 
 ul li.checked{
-    color: #000;
-    text-decoration: line-through  1px;
+    color: #fff;
+    text-decoration: line-through #fff 1px;
 }
 
 ul li.checked::before{
@@ -155,12 +159,13 @@ footer{
 }
 a i{
     font-size: 1.33rem;
-    padding: .4rem;
+    padding: .45rem;
     transition: .3s ease-in-out;
 }
 a i:hover{
-    box-shadow: 0 0 .3rem #ffffff88;
+    box-shadow: 0 0 .2rem #ffffff88;
     border-radius: 50%;
+    /* background-color: #ff5845d6; */
 
 }
 
@@ -180,7 +185,7 @@ a i:hover{
     }
 }
 
-@media (max-width: 541px) {
+@media (max-width: 613px) {
     .todo-app{
         min-width: 100vw;
         padding: 2.3rem 2rem 3.1rem;
@@ -192,19 +197,19 @@ a i:hover{
     
 .todo-app{
     background-color: #ffffff00;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 }
 
 @media (max-width: 430px) {
     .todo-app h2{
-        font-size: 2.1rem;
+        font-size: 2.8rem;
         
     }
     
     .todo-app, h2 img{
-        width: 17%;
+        width: 20%;
     
     }
     .todo-app .inputArea{
@@ -214,18 +219,18 @@ a i:hover{
     
     
     .inputArea #inputBox{
-        padding: .5rem;   
+        padding: .7rem;   
        
     }
     
     #btn{
-        padding: .6rem 1.8rem;
+        padding: .7rem 1.8rem;
         font-size: 1rem;
         
         
     }
     ul li{
-        font-size: .95rem;
+        font-size: 1.3rem;
     }
     ul li::before{
         height: 22px;
@@ -236,6 +241,7 @@ a i:hover{
 footer{
     padding: .5rem 0.3rem .3rem;
     gap: .8rem;
+    box-shadow: 0 0 .5rem #000;
 }
 .footer-details a{
     font-size: 1.2rem;
@@ -254,24 +260,16 @@ a i{
 
 @media (max-width: 330px) {
     .todo-app h2{
-        font-size: 1.9rem;
+        font-size: 2.4rem;
         
     }
-    .todo-app, h2 img{
-        width: 20%;
-    
-    }
 
-       
     .inputArea #inputBox{
         padding: .3rem;   
     }
     
     #btn{
-        padding: .4rem 1.5rem;
-        font-size: .94rem;
-        
-        
+        padding: .6rem 1.1rem;
     }
 
 }
