@@ -24,7 +24,7 @@
     background-color: #ffffff0b;
     border-radius: 7px;
     box-shadow: 0 0 .5rem #252424;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     min-width: 590px;
     min-height: 95vh;
     padding: 2.3rem 2rem 3.1rem;
@@ -189,6 +189,11 @@ a i:hover{
         min-height: 100vh;
         
     }
+    
+.todo-app{
+    background-color: #ffffff00;
+    backdrop-filter: blur(3px);
+}
 
 }
 
