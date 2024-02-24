@@ -104,8 +104,8 @@ ul li::before{
     background-position: center;
     background-size: cover;
     position: absolute;
-    height: 26px;
-    width: 26px;
+    height: 29px;
+    width: 29px;
     top: 9px;
     left: 8px;
     border-radius: 50%;
@@ -224,7 +224,7 @@ a i:hover{
     }
     
     #btn{
-        padding: .7rem 1.8rem;
+        padding: .7rem 1.89rem;
         font-size: 1rem;
         
         
@@ -233,8 +233,8 @@ a i:hover{
         font-size: 1.3rem;
     }
     ul li::before{
-        height: 22px;
-        width: 22px;
+        height: 25px;
+        width: 25px;
     
     }
 
@@ -269,7 +269,7 @@ a i{
     }
     
     #btn{
-        padding: .6rem 1.1rem;
+        padding: .6rem 1.2rem;
     }
 
 }
