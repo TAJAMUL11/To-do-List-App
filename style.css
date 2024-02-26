@@ -89,8 +89,8 @@
 
 ul li{
     list-style: none;
-    font-size: 1.4rem;
-    padding: .7rem .5rem .7rem 2.8rem;
+    font-size: 1.3rem;
+    padding: .7rem .9rem .7rem 2.8rem;
     user-select: none;
     cursor: pointer;
     font-weight: 600;
@@ -114,7 +114,7 @@ ul li::before{
 
 ul li.checked{
     color: #fff;
-    text-decoration: line-through #fff 1px;
+    text-decoration: line-through #ff5845f1 1.2px;
 }
 
 ul li.checked::before{
@@ -133,6 +133,7 @@ ul li span{
     line-height: 2.3rem;
     text-align: center;
     font-weight: 600;
+    padding: .1rem;
 
 }
 ul li span:hover{
@@ -230,7 +231,7 @@ a i:hover{
         
     }
     ul li{
-        font-size: 1.3rem;
+        font-size: 1.17rem;
     }
     ul li::before{
         height: 25px;
@@ -270,6 +271,9 @@ a i{
     
     #btn{
         padding: .6rem 1.2rem;
+    }
+    ul li{
+        font-size: 1rem;
     }
 
 }
